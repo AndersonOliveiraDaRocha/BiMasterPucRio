@@ -18,9 +18,11 @@ A técnica de segmentação de instância foi selecionada para identificação d
 
 * Detecção de Classes
 
+![Screenshot](ImgClassification.jpeg)
 
 
-![alt text](https://github.com/AndersonOliveiraDaRocha/BiMasterPucRio/Imagens/ObjClass.png?raw=true)
+
+https://github.com/AndersonOliveiraDaRocha/BiMasterPucRio/tree/main/IMAGES/ImgClassification.jpeg
 
 
 * Detecção de Objetos
