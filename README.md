@@ -16,13 +16,9 @@ Considerando o contexto acima descrito, esse projeto tem como objetivo permitir 
 
 A técnica de segmentação de instância foi selecionada para identificação das múltiplas ocorrências de corrosão nas fotos das estruturas metálicas. A técnica de segmentação de instância é uma das técnicas mais avançadas entre as técnicas de visão computacional como segue:
 
-* Detecção de Classes
+## * Classificação de Imagens
 
 ![Screenshot](IMAGES/ImgClassification.jpeg)
-
-
-
-https://github.com/AndersonOliveiraDaRocha/BiMasterPucRio/tree/main/IMAGES/ImgClassification.jpeg
 
 
 * Detecção de Objetos
