@@ -20,7 +20,7 @@ A técnica de segmentação de instância foi selecionada para identificação d
 
 
 
-![alt text](https://github.com/AndersonOliveiraDaRocha/BiMasterPucRio/tree/main/IMAGES/ImgClassification.jpeg?raw=true)
+https://github.com/AndersonOliveiraDaRocha/BiMasterPucRio/tree/main/IMAGES/ImgClassification.jpeg
 
 
 * Detecção de Objetos
