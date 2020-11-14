@@ -18,7 +18,8 @@ A técnica de segmentação de instância foi selecionada para identificação d
 
 * Detecção de Classes
 
-https://www.pyimagesearch.com/wp-content/uploads/2020/10/multi_class_bbox_regression_dataset.png
+(https://www.pyimagesearch.com/wp-content/uploads/2020/10/multi_class_bbox_regression_dataset.png)
+
 
 * Detecção de Objetos
 * Segmentação Semântica
