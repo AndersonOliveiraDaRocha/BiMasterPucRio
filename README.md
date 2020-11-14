@@ -1,7 +1,8 @@
 # Visão Computacional para Detecção de Corrosão Externa em Instalações Offshore
 
 * BI MASTER PUC RIO (2020 - TURMA PETROBRAS) GRUPO D5 DO PROGRAMA E&P COMPETÊNCIAS.
-* ALUNO: ANDERSON OLIVEIRA DA ROCHA, MATRÍCULA: 192190080
+* ALUNO: ANDERSON OLIVEIRA DA ROCHA
+* MATRÍCULA: 192190080
 
 ## CONTEXTO: 
 
@@ -10,6 +11,18 @@ Instalações industriais offshore operam em ambientes com alta exposição a in
 ## PROPOSTA:
 
 Considerando o contexto acima descrito, esse projeto tem como objetivo permitir a detecção da corrosão externa por meio de um algoritmo de visão computacional deeplearning que analisa uma fotografia comum e destaca as áreas com corrosão existente. Essa abordagem viabiliza uma triagem em terra com foco em entender as condições gerais da unidade. Essa abordagem tem potencial de reduzir a quantidade de embarques e mesmo a quantidade de HH envolvido no processo de inspeção.
+
+## ABORDAGEM:
+
+A técnica de segmentação de instância foi selecionada para identificação das múltiplas ocorrências de corrosão nas fotos das estruturas metálicas. A técnica de segmentação de instância é uma das técnicas mais avançadas entre as técnicas de visão computacional como segue:
+
+* Detecção de Classes
+
+https://www.pyimagesearch.com/wp-content/uploads/2020/10/multi_class_bbox_regression_dataset.png
+
+* Detecção de Objetos
+* Segmentação Semântica
+* Segmentação de Instância
 
 
 
