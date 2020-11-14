@@ -18,7 +18,7 @@ A técnica de segmentação de instância foi selecionada para identificação d
 
 * Detecção de Classes
 
-![Screenshot](IMAGES\ImgClassification.jpeg)
+![Screenshot](IMAGES/ImgClassification.jpeg)
 
 
 
