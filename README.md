@@ -20,33 +20,34 @@ Entre as várias técnicas de visão computacional descritas abaixo, a técnica 
 
 Na classificação de imagens o objetivo é identificar a qual classe pertence uma determinada imagem, como carros, pessoas, animais, etc.
 
-<img src="IMAGES/ImgClassification.jpeg" width="800">
+<img src="IMAGES/ImgClassification.jpeg" width="1000">
 
 
 ### * Detecção de Objetos
 
 Na detecção de objetos o objetivo é localizar onde os elementos de interesse (uma determinada classe de interesse) se encontram na imagem, geralmente por meio de uma Bounding Box (caixa) ao redor do mesmo. Se combinada com outras técnicas é possível além de localizar e marcar os elementos na imagem com um Bounding Box, também classificar em classes distintas.
 
-![Screenshot](IMAGES/ObjDetection.jpeg)
+<img src="IMAGES/ObjDetection.jpeg" width="1000">
+
 
 ### * Rastreamento de Objetos
 
 Rastreamento de objetos é o processo de seguir um ou mais elementos específicos de interesse em uma cena, geralmente utilizado em aplicações com vídeos.
 
 
-![Screenshot](IMAGES/ObjTracking.jpeg)
+<img src="IMAGES/ObjTracking.jpeg" width="1000">
 
 ### * Segmentação Semântica
 
 Na segmentação semântica um conjunto de pixels que pertence a uma mesma classe são classificados de forma igual formando uma máscara que delimita as fronteiras do elemento.
 
-![Screenshot](IMAGES/SemanticSegm.jpeg)
+<img src="IMAGES/SemanticSegm.jpeg" width="1000">
 
 ### * Segmentação por Instância
 
 Na segmentação por instância os pixels são classificados por semelhança, não somente das classes, mas também por cada instância que pode ser de classes distintas. Uma máscara é criada individualmente para cada instância identificada na cena.
 
-![Screenshot](IMAGES/InstanceSegm.jpeg)
+<img src="IMAGES/InstanceSegm.jpeg" width="1000">
 
 Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK RCNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK RCNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo.
 
