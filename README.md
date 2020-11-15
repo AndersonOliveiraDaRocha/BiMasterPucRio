@@ -19,9 +19,21 @@ A técnica de segmentação de instância foi selecionada para identificação d
 ## * Classificação de Imagens
 
 ![Screenshot](IMAGES/ImgClassification.jpeg)
+
+## * Detecção de Objetos
+
 ![Screenshot](IMAGES/ObjDetection.jpeg)
+
+## * Rastreamento de Objetos
+
 ![Screenshot](IMAGES/ObjTracking.jpeg)
+
+## * Segmentação Semântica
+
 ![Screenshot](IMAGES/SemanticSegm.jpeg)
+
+## * Segmentação de Instância
+
 ![Screenshot](IMAGES/InstanceSegm.jpeg)
 
 
