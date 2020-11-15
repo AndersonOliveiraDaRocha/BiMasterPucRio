@@ -24,7 +24,7 @@ Na classificação de imagens o objetivo é identificar a qual classe pertence u
 
 ### * Detecção de Objetos
 
-Na detecção de objetos o objetivo é localizar onde os elementos de interesse (uma determinada classe de interesse) se encontram na imagem, geralmente por meio de uma Bounding Box (caixa) ao redor do mesmo. Se combinada com outras técnicas é possível além de localizar e marcar os elementos na imagem com um Bounding Box também classificar em classes distintas.
+Na detecção de objetos o objetivo é localizar onde os elementos de interesse (uma determinada classe de interesse) se encontram na imagem, geralmente por meio de uma Bounding Box (caixa) ao redor do mesmo. Se combinada com outras técnicas é possível além de localizar e marcar os elementos na imagem com um Bounding Box, também classificar em classes distintas.
 
 ![Screenshot](IMAGES/ObjDetection.jpeg)
 
@@ -40,9 +40,10 @@ Na segmentação semântica um conjunto de pixels que pertence a uma mesma class
 
 ![Screenshot](IMAGES/SemanticSegm.jpeg)
 
-### * Segmentação de Instância
+### * Segmentação por Instância
 
 Na segmentação por instância os pixels são classificados por semelhança, não somente das classes, mas também por cada instância que pode ser de classes distintas. Uma máscara é criada individualmente para cada instância identificada na cena.
 
 ![Screenshot](IMAGES/InstanceSegm.jpeg)
 
+Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK RCNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK RCNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo.
