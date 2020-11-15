@@ -20,7 +20,7 @@ Entre as várias técnicas de visão computacional descritas abaixo, a técnica 
 
 Na classificação de imagens o objetivo é identificar a qual classe pertence uma determinada imagem, como carros, pessoas, animais, etc.
 
-<img src="IMAGES/ImgClassification.jpeg" width="400">
+<img src="IMAGES/ImgClassification.jpeg" width="800">
 
 
 ### * Detecção de Objetos
@@ -57,7 +57,7 @@ O projeto encontra-se disposto da seguinte forma:
 * **CUSTOM**: Contém os arquivos **predict.py** e **custom.py**, respectivamente para fazer predição e treinamento do modelo gerando novos pesos. Para predição uma imagem simples precisa ser copiada para essa pasta e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **Pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
-<img src="CUSTOM/Resultados/Sample_A.jpg" width="300"><img src="CUSTOM/Resultados/Result_A.png" width="300">
+<img src="CUSTOM/Resultados/Sample_A.jpg" width="300"><img src="CUSTOM/Resultados/Result_A.png" width="1200">
 
 
 
