@@ -52,7 +52,7 @@ Considerando a técnica selecionada para abordar o problema, as pesquisas desse 
 
 O projeto encontra-se disposto da seguinte forma:
 
-* **CUSTOM**: Contém os arquivos **predict.py** e **custom.py**, respectivamente para fazer predição e treinamento do modelo gerando novos pesos. Para predição uma imagem simples precisa ser copiada para essa pasta e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **Pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde o resultado de algumas predições estão salvas para efeito de comparação, como segue:
+* **CUSTOM**: Contém os arquivos **predict.py** e **custom.py**, respectivamente para fazer predição e treinamento do modelo gerando novos pesos. Para predição uma imagem simples precisa ser copiada para essa pasta e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **Pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
-![Screenshot](CUSTOM/Resultados/Sample_A.png)
+![Screenshot](CUSTOM//Resultados//Sample_A.png)
 ![Screenshot](CUSTOM/Resultados/Result_A.jpg)
