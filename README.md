@@ -47,3 +47,9 @@ Na segmentação por instância os pixels são classificados por semelhança, n�
 ![Screenshot](IMAGES/InstanceSegm.jpeg)
 
 Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK RCNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK RCNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo.
+
+## Desenvolvimento:
+
+O projeto encontra-se disposto da seguinte forma:
+
+* **CUSTOM**: Contém os arquivos **predict.py** e **custom.py**, respectivamente para fazer predição e treinar novamente o modelo gerando novos pesos. Para predição uma imagem simples precisa ser copiada para essa pasta e deve ter o nome: **Corrosao.jpg** e posteriormente executar o comando **Pyhton predict.py**
