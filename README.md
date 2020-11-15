@@ -55,7 +55,7 @@ Considerando a técnica selecionada para abordar o problema, as pesquisas desse 
 
 O projeto encontra-se disposto da seguinte forma:
 
-* **CUSTOM**: Contém os arquivos **predict.py** e **custom.py**, respectivamente para fazer predição e treinamento do modelo gerando novos pesos. Para predição uma imagem simples precisa ser copiada para essa pasta e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **Pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
+* Pasta **CUSTOM**: Contém os arquivos **custom.py** e **predict.py**, respectivamente para fazer o treinamento do modelo e a predição com a detecção da corrosão. Para treinar o modelo e gerar novos pesos deve-se usar o seguinte comando: **"python custom.py train --dataset=../dataset --weights=coco"**, os novos pesos gerados estarão na SUBPASTA de sessão localizada na pasta **WEIGHT** na raiz do projeto. Para predição uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
 <img src="CUSTOM/Resultados/Sample_A.jpg" width="294"><img src="CUSTOM/Resultados/Result_A.png" width="300">
