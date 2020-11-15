@@ -53,7 +53,19 @@ Considerando a técnica selecionada para abordar o problema, as pesquisas desse 
 
 ## Desenvolvimento:
 
-O projeto encontra-se disposto da seguinte forma:
+Como citado no tópico anterior esse projeto foi desenvolvido com base na rede MASK RCNN, seguem algumas características técnicas:
+
+* KERAS com BACKEND Tensorflow;
+* Rede MASK RCNN com BACBONE RESNET101;
+* Rede pré-treinada com DATASET MS COCO;
+* Retreino com DATASET customizado com anotações de segmentação de corrosão, conjunto de treino (TRAIN) com 100 imagens e conjunto de validação (VAL) com 30 imagens;
+* Anotações realizadas com o VGG Image Annotator (VIA) e anotações exportadas como JSON (DATASET.JSON);
+* Treino realizado em GPU NVIDIA 940MX com CUDA 9.0 e CUDNN64_7.dll;
+* Predição realizada em CPU;
+* Requisitos importantes de versão: tensorflow==1.5.1; keras==2.1.0; tensorflow-gpu==1.5.1;h5py==2.10.0;
+* Os pesos MS COCO e CORROSION, respectivamente para retreinar o modelo e realizar predições, encontram-se compactados na pasta **WEIGHT** e precisam ser descompactados para execução do projeto;
+
+A estrutura de pastas do projeto encontra-se disposta da seguinte forma:
 
 * Pasta **CUSTOM**: Contém os arquivos **custom.py** e **predict.py**, respectivamente para fazer o treinamento do modelo e a predição com a detecção da corrosão. Para treinar o modelo e gerar novos pesos deve-se usar o seguinte comando: **"python custom.py train --dataset=../dataset --weights=coco"**, os novos pesos gerados estarão na SUBPASTA de sessão localizada na pasta **WEIGHT** na raiz do projeto. Para predição uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
