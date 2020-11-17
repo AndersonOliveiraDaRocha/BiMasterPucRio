@@ -75,6 +75,8 @@ Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e 
 <img src="CUSTOM/Resultados/Sample_B.jpg" width="155"><img src="CUSTOM/Resultados/Result_B.png" width="160">
 <img src="CUSTOM/Resultados/Sample_F.jpg" width="155"><img src="CUSTOM/Resultados/Result_F.png" width="160">
 <img src="CUSTOM/Resultados/Sample_G.jpg" width="155"><img src="CUSTOM/Resultados/Result_G.png" width="160">
+<img src="CUSTOM/Resultados/Sample_C.jpg" width="155"><img src="CUSTOM/Resultados/Result_C.png" width="160">
+<img src="CUSTOM/Resultados/Sample_D.jpg" width="155"><img src="CUSTOM/Resultados/Result_D.png" width="160">
 
 * Pasta **DATASET**: Hospeda os conjuntos de dados utilizados para treinar o modelo, DATASET de Treino (**TRAIN**) e DATASET de validação (**VAL**). As anotações foram feitas no VIA e os resultados exportados no formato JSON como já explicado anteriormente. Para um modelo com maior precisão é necessário um volume de dados de treinamento mais expressivo, porém, não houve disponibilidade para o exercício desse projeto.
 
