@@ -6,7 +6,7 @@
 
 ## Contexto: 
 
-Instalações industriais offshore operam em ambientes com alta exposição a intempéries, nesse ambiente hostil, estruturas metálicas sofrem com a corrosão e acabam por se degradar, comprometendo dessa forma a integridade da unidade e gerando potencial de impactar na eficiência operacional e a segurança dos trabalhadores. Inspeções periódicas acontecem com o objetivo de identificar ocorrências de corrosão de modo a subsidiar um adequado planejamento e priorização da execução dos serviços de restauração e preservações desses elementos. Contudo, o trabalho de inspecionar periodicamente essas unidades, além é oneroso, consome um HH considerável, além de concorrer por vagas a bordo, um problema constante em uma unidade offshore.
+Instalações industriais offshore operam em ambientes com alta exposição a intempéries, nesse ambiente hostil estruturas metálicas sofrem com a corrosão e acabam por se degradar, comprometendo dessa forma a integridade da unidade e gerando potencial de impactar na eficiência operacional e na segurança dos trabalhadores. Inspeções periódicas acontecem com o objetivo de identificar as ocorrências de corrosão de modo a subsidiar um adequado planejamento e priorização para execução dos serviços de restauração e preservação desses elementos. Contudo, o trabalho de inspecionar periodicamente essas unidades é oneroso, consome um HH considerável, além de concorrer por vagas a bordo, o que é um ponto de atenção constante nas operações offshore.
 
 ## Proposta:
 
@@ -14,7 +14,7 @@ Considerando o contexto acima descrito, esse projeto tem como objetivo permitir 
 
 ## Abordagem:
 
-Entre as várias técnicas de visão computacional descritas abaixo, a técnica de segmentação por instância foi selecionada para identificação das múltiplas ocorrências de corrosão nas fotos das estruturas metálicas. A técnica de segmentação por instância é uma das técnicas mais avançadas e considerando o problema em questão ela pavimenta a evolução do modelo para um cenário futuro, considerando que no momento só será feita a detecção de ocorrências de corrosão, porém se espera evoluir o modelo para identificar o grau de severidade da corrosão, como por exemplo: leve, moderada ou severa.
+Entre as várias técnicas de visão computacional descritas abaixo, a técnica de segmentação por instância foi selecionada para identificação das múltiplas ocorrências de corrosão nas fotos dos componentes metálicos na unidade offshore. A técnica de segmentação por instância é uma das técnicas mais avançadas e considerando o problema em questão pavimenta o caminho para evolução do modelo em um cenário futuro, considerando que no momento será feita apenas a detecção das ocorrências de corrosão, porém, se espera evoluir o modelo para identificar outras informações pertinentes ao processo de inpeção de corrosão externa, por exemplo: O tipo de distribuição da corrosão, o percentual de corrosão mediante a norma, entre outras informações.
 
 ### * Classificação de Imagens
 
@@ -25,7 +25,7 @@ Na classificação de imagens o objetivo é identificar a qual classe pertence u
 
 ### * Detecção de Objetos
 
-Na detecção de objetos o objetivo é localizar onde os elementos de interesse (uma determinada classe de interesse) se encontram na imagem, geralmente por meio de uma Bounding Box (caixa) ao redor do mesmo. Se combinada com outras técnicas é possível além de localizar e marcar os elementos na imagem com um Bounding Box, também classificar em classes distintas.
+Na detecção de objetos o objetivo é localizar onde os elementos de interesse (uma determinada classe de interesse) se encontram na imagem, geralmente por meio de uma Bounding Box (caixa) ao redor do mesmo. Se combinada com outras técnicas é possível além de localizar e marcar os elementos na imagem com um Bounding Box, classificar também em classes distintas.
 
 <img src="IMAGES/ObjDetection.jpeg" width="800">
 
@@ -49,7 +49,7 @@ Na segmentação por instância os pixels são classificados por semelhança, n�
 
 <img src="IMAGES/InstanceSegm.jpeg" width="800">
 
-Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK RCNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK RCNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo.
+Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK R-CNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK R-CNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo e desenvolvimento do projeto.
 
 ## Características:
 
@@ -77,17 +77,17 @@ Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e 
 
 * Pasta **DATASET**: Hospeda os conjuntos de dados utilizados para treinar o modelo, DATASET de Treino (**TRAIN**) e DATASET de validação (**VAL**). As anotações foram feitas no VIA e os resultados exportados no formato JSON como já explicado anteriormente. Para um modelo com maior precisão é necessário um volume de dados de treinamento mais expressivo, porém, não houve disponibilidade para o exercício desse projeto.
 
-* Pasta **mrcnn**: Hospeda o núcleo do modelo MASK RCNN.
+* Pasta **mrcnn**: Hospeda o núcleo do modelo MASK R-CNN.
 
-* Pasta **WEIGHT**: Estão armazenados os pesos. Primeiro existe o peso **COCO_WEIGHT.h5** que é o peso do DATASET MS COCO, usado como base para estender o projeto, depois os pesos treinados na detecção de corrosão que estão salvos com o nome de **CORROSION.h5**. Caso o modelo seja novamente treinado serão geradas novas pastas de sessão na raiz da pasta WEIGHT e os novos pesos treinados serão salvos dentro dessas pastas de sessão, cada época vai gerar um peso. Importante descompactar os pesos antes da execução do projeto!
+* Pasta **WEIGHT**: Estão armazenados os pesos. Primeiro existe o peso **COCO_WEIGHT.h5** que é o peso do DATASET MS COCO, usado como base para estender o projeto, depois os pesos treinados na detecção de corrosão que está salvo com o nome de **CORROSION.h5**. Caso o modelo seja novamente treinado serão geradas novas pastas de sessão na raiz da pasta WEIGHT e os novos pesos treinados serão criados dentro dessas pastas de sessão, cada época vai gerar um peso. Importante descompactar os pesos antes da execução do projeto!
 
 ## Desenvolvimento:
 
 O desenvolvimento do projeto teve como principais fases:
 
 **1.** Autorização do corpo gerencial da cia. (PETROBRAS) para propor a temática de detecção de corrosão por visão computacional e acesso às fontes de dados;  
-**2.** Análise do conteúdo base para o treino do modelo (DATASET);  
-**3.** Complementação de anotações e tratamento de imagens (Giro por exemplo);  
+**2.** Análise do das fontes de dados para o treino do modelo (DATASET);  
+**3.** Complementação de anotações e tratamento de imagens (Giro de imagens por exemplo para enquadramento na anotação);  
 **4.** Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
 **5.** Análise do modelo MASK R-CNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
 **6.** Configuração de ambiente com os pacotes corretos das bibliotecas envolvidas;  
@@ -112,24 +112,24 @@ LAYERS='heads' **(limitado aos heads por conta da GPU disponível para o projeto
 STEPS_PER_EPOCH = 20 **(passos por época)**    
 DETECTION_MIN_CONFIDENCE = 0.8 **(grau de confiança mínimo no treinamento)**  
 
-O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK R-CNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
+O modelo também foi reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK R-CNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
 
 <img src="IMAGES/VIA.png" width="800">
 
-Para fins de validação da abordagem técnica do projeto, foi fixado (**CORROSAO.JPG**) o nome da imagem esperada para a predição, porém, o projeto abre muitas oportunidades de melhoria.  
+Para fins de validação da abordagem técnica do projeto, foi fixado (**CORROSAO.JPG**) o nome da imagem esperada para a predição, porém, o projeto abre muitas oportunidades de melhoria e essa é uma delas, não fixar o input.
 
 ## Próximos Passos:
 
 Além da análise da fotografia para detecção da presença de corrosão as segmentando, existem outras necessidades de informações que subsidiam o trabalho do inspetor. Informações como o tipo de distribuição da corrosão, os sistemas afetados (flanges, guarda-corpos, tubulações, Suportes, etc.), o grau de corrosão mediante a norma ASTM D-610, são outras informações necessárias e que completam o trabalho do inspetor.  
 
-O resultado mais completo teria a seguinte aparência:
+O resultado mais completo considerando a evolução do modelo, ou mesmo a combinação de outras técnicas de visão computacional, teria a seguinte aparência:
 
 <img src="IMAGES/ModelEvolution.png" width="600">
 
 ## Conclusão:
 
 A visão computacional em suporte ao trabalho do inspetor de corrosão externa apresenta um grande potencial de otimizar o HH empregado nessa atividade, além de diminuir a subjetividade da análise, uma vez que um inspetor pode ter uma percepção distinta de outro inspetor acerca das condições da instalação, por mais que a norma ASTM-D610 (a norma possui imagens com amostras dos graus de corrosão para serem utilizados como referência) atue como parâmetro de referência. Pode até mesmo reduzir o número de embarques necessários para esse tipo de serviço, visto que as imagens podem ser coletadas por meio de outros recursos ou colaboradores a bordo e posteriormente analisadas em terra.  
-O rede MASK R-CNN mostrou grande potencial de segmentar instâncias, porém, resta configurado a necessidade de analisar outras técnicas de visão computacional para completar os objetivos futuros desse trabalho, fazendo uma combinação desses resultados. Além do grande esfoço necessário para gerar um DATASET consiga treinar um modelo com essa proposta.
+O rede MASK R-CNN mostrou grande potencial de segmentar instâncias, porém, resta configurado a necessidade de analisar outras técnicas de visão computacional para completar os objetivos futuros desse trabalho, fazendo uma combinação desses resultados. Além do grande esfoço necessário para gerar um DATASET que consiga treinar um modelo com essa proposta.
 
 ## Citação:
 
