@@ -71,8 +71,8 @@ A estrutura de pastas do projeto encontra-se disposta da seguinte forma:
 Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg**, posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
-<img src="CUSTOM/Resultados/Sample_A.jpg" width="174"><img src="CUSTOM/Resultados/Result_A.png" width="180">
-<img src="CUSTOM/Resultados/Sample_B.jpg" width="174"><img src="CUSTOM/Resultados/Result_B.png" width="180">
-<img src="CUSTOM/Resultados/Sample_F.jpg" width="174"><img src="CUSTOM/Resultados/Result_F.png" width="180">
+<img src="CUSTOM/Resultados/Sample_A.jpg" width="154"><img src="CUSTOM/Resultados/Result_A.png" width="160">
+<img src="CUSTOM/Resultados/Sample_B.jpg" width="154"><img src="CUSTOM/Resultados/Result_B.png" width="160">
+<img src="CUSTOM/Resultados/Sample_F.jpg" width="154"><img src="CUSTOM/Resultados/Result_F.png" width="160">
 
 
