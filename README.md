@@ -67,12 +67,13 @@ Como citado no tópico anterior esse projeto foi desenvolvido com base na rede M
 
 A estrutura de pastas do projeto encontra-se disposta da seguinte forma:
 
-* Pasta **CUSTOM**: Contém os arquivos **custom.py** e **predict.py**, respectivamente para fazer o treinamento do modelo e a predição com a detecção da corrosão. Para treinar o modelo e gerar novos pesos deve-se usar o seguinte comando: **"python custom.py train --dataset=../dataset --weights=coco"**, os novos pesos gerados estarão na SUBPASTA de sessão localizada na pasta **WEIGHT** na raiz do projeto. Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg**, posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
+* Pasta **CUSTOM**: Contém os arquivos **custom.py** e **predict.py**, respectivamente para fazer o treinamento do modelo e a predição com a detecção da corrosão. Para treinar o modelo e gerar novos pesos deve-se usar o seguinte comando: **"python custom.py train --dataset=../dataset --weights=coco"**, os novos pesos gerados estarão na SUBPASTA de sessão localizada na pasta **WEIGHT** na raiz do projeto.  
+Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg**, posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
 <img src="CUSTOM/Resultados/Sample_A.jpg" width="294"><img src="CUSTOM/Resultados/Result_A.png" width="300">  
 <img src="CUSTOM/Resultados/Sample_B.jpg" width="294"><img src="CUSTOM/Resultados/Result_B.png" width="300">  
-<img src="CUSTOM/Resultados/Sample_C.jpg" width="294"><img src="CUSTOM/Resultados/Result_C.png" width="300">
+<img src="CUSTOM/Resultados/Sample_C.jpg" width="294"><img src="CUSTOM/Resultados/Result_C.png" width="300">  
 
 
 
