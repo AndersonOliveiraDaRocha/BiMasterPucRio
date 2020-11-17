@@ -120,15 +120,11 @@ Para fins de validação da abordagem técnica do projeto, foi fixado (CORROSAO.
 
 ## Próximos Passos:
 
-Além da análise da fotografia para detecção da presença de corrosão, existem outras necessidades de informações que subsidiam o trabalho do inspetor. Informações como o tipo de distribuição da corrosão, os sistemas afetados (flanges, guarda-corpos, tubulações, etc.), o grau de corrosão mediante a norma ASTM D-610, são outras informações necessárias e que completam o trabalho do inspetor.  
+Além da análise da fotografia para detecção da presença de corrosão as segmentando, existem outras necessidades de informações que subsidiam o trabalho do inspetor. Informações como o tipo de distribuição da corrosão, os sistemas afetados (flanges, guarda-corpos, tubulações, Suportes, etc.), o grau de corrosão mediante a norma ASTM D-610, são outras informações necessárias e que completam o trabalho do inspetor.  
 
 O resultado mais completo teria a seguinte aparência:
 
-<img src="IMAGES/ModelEvolution.png" width="350">
-
-
-
-
+<img src="IMAGES/ModelEvolution.png" width="300">
 
 ## Conclusão:
 
