@@ -71,9 +71,9 @@ A estrutura de pastas do projeto encontra-se disposta da seguinte forma:
 Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg**, posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
-<img src="CUSTOM/Resultados/Sample_A.jpg" width="154"><img src="CUSTOM/Resultados/Result_A.png" width="160">
-<img src="CUSTOM/Resultados/Sample_B.jpg" width="154"><img src="CUSTOM/Resultados/Result_B.png" width="160">
-<img src="CUSTOM/Resultados/Sample_F.jpg" width="154"><img src="CUSTOM/Resultados/Result_F.png" width="160">
+<img src="CUSTOM/Resultados/Sample_A.jpg" width="150"><img src="CUSTOM/Resultados/Result_A.png" width="150">
+<img src="CUSTOM/Resultados/Sample_B.jpg" width="150"><img src="CUSTOM/Resultados/Result_B.png" width="150">
+<img src="CUSTOM/Resultados/Sample_F.jpg" width="150"><img src="CUSTOM/Resultados/Result_F.png" width="150">
 
 * Pasta **DATASET**: Hospeda os conjuntos de dados utilizados para treinar o modelo, DATASET de Treino (**TRAIN**) e DATASET de validação (**VAL**). As anotações foram feitas no VIA e os resultados exportados no formato JSON como já explicado anteriormente. Para um modelo com maior precisão é necessário um volume de dados de treinamento mais expressivo, porém, não houve disponibilidade para o exercício desse projeto.
 
