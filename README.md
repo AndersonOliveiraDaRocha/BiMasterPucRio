@@ -112,7 +112,7 @@ LAYERS='heads' **(limitação por conta da GPU disponível para o projeto)**
 STEPS_PER_EPOCH = 20  
 DETECTION_MIN_CONFIDENCE = 0.8  
 
-O modelo também reprojetado para considerar apenas 2 classes o BACKGROUND (padrão na implementação MASK RCNN) e a classe alvo, no caso CORROSAO = SIM, conforme anotação no VIA:  
+O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK RCNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
 
 <img src="IMAGES/VIA.png" width="1000">
 
