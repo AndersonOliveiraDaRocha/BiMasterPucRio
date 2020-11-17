@@ -20,14 +20,14 @@ Entre as várias técnicas de visão computacional descritas abaixo, a técnica 
 
 Na classificação de imagens o objetivo é identificar a qual classe pertence uma determinada imagem, como carros, pessoas, animais, etc.
 
-<img src="IMAGES/ImgClassification.jpeg" width="1000">
+<img src="IMAGES/ImgClassification.jpeg" width="800">
 
 
 ### * Detecção de Objetos
 
 Na detecção de objetos o objetivo é localizar onde os elementos de interesse (uma determinada classe de interesse) se encontram na imagem, geralmente por meio de uma Bounding Box (caixa) ao redor do mesmo. Se combinada com outras técnicas é possível além de localizar e marcar os elementos na imagem com um Bounding Box, também classificar em classes distintas.
 
-<img src="IMAGES/ObjDetection.jpeg" width="1000">
+<img src="IMAGES/ObjDetection.jpeg" width="800">
 
 
 ### * Rastreamento de Objetos
@@ -35,19 +35,19 @@ Na detecção de objetos o objetivo é localizar onde os elementos de interesse 
 Rastreamento de objetos é o processo de seguir um ou mais elementos específicos de interesse em uma cena, geralmente utilizado em aplicações com vídeos.
 
 
-<img src="IMAGES/ObjTracking.jpeg" width="1000">
+<img src="IMAGES/ObjTracking.jpeg" width="800">
 
 ### * Segmentação Semântica
 
 Na segmentação semântica um conjunto de pixels que pertence a uma mesma classe são classificados de forma igual formando uma máscara que delimita as fronteiras do elemento.
 
-<img src="IMAGES/SemanticSegm.jpeg" width="1000">
+<img src="IMAGES/SemanticSegm.jpeg" width="800">
 
 ### * Segmentação por Instância
 
 Na segmentação por instância os pixels são classificados por semelhança, não somente das classes, mas também por cada instância que pode ser de classes distintas. Uma máscara é criada individualmente para cada instância identificada na cena.
 
-<img src="IMAGES/InstanceSegm.jpeg" width="1000">
+<img src="IMAGES/InstanceSegm.jpeg" width="800">
 
 Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK RCNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK RCNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo.
 
@@ -71,15 +71,15 @@ A estrutura de pastas do projeto encontra-se disposta da seguinte forma:
 Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg**, posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
-<img src="CUSTOM/Resultados/Sample_A.jpg" width="154"><img src="CUSTOM/Resultados/Result_A.png" width="160">
-<img src="CUSTOM/Resultados/Sample_B.jpg" width="154"><img src="CUSTOM/Resultados/Result_B.png" width="160">
-<img src="CUSTOM/Resultados/Sample_F.jpg" width="154"><img src="CUSTOM/Resultados/Result_F.png" width="160">
+<img src="CUSTOM/Resultados/Sample_A.jpg" width="150"><img src="CUSTOM/Resultados/Result_A.png" width="150">
+<img src="CUSTOM/Resultados/Sample_B.jpg" width="150"><img src="CUSTOM/Resultados/Result_B.png" width="150">
+<img src="CUSTOM/Resultados/Sample_F.jpg" width="150"><img src="CUSTOM/Resultados/Result_F.png" width="150">
 
 * Pasta **DATASET**: Hospeda os conjuntos de dados utilizados para treinar o modelo, DATASET de Treino (**TRAIN**) e DATASET de validação (**VAL**). As anotações foram feitas no VIA e os resultados exportados no formato JSON como já explicado anteriormente. Para um modelo com maior precisão é necessário um volume de dados de treinamento mais expressivo, porém, não houve disponibilidade para o exercício desse projeto.
 
 * Pasta **mrcnn**: Hospeda o núcleo do modelo MASK RCNN.
 
-* Pasta **WEIGHT**: Estão armazenados os pesos. Primeiro existe o peso **COCO_WEIGHT.h5** que é o peso do DATASET MS COCO, usado como base para estender o projeto, depois os pesos treinados na detecção de corrosão que estão salvos com o nome de **CORROSION.h5**. Caso o modelo seja novamente treinado serão geradas novas pastas de sessão e os novos pesos treinados serão salvos dentro dessas pastas, cada época vai gerar um peso. Importante descompactar os pesos antes da execução do projeto!
+* Pasta **WEIGHT**: Estão armazenados os pesos. Primeiro existe o peso **COCO_WEIGHT.h5** que é o peso do DATASET MS COCO, usado como base para estender o projeto, depois os pesos treinados na detecção de corrosão que estão salvos com o nome de **CORROSION.h5**. Caso o modelo seja novamente treinado serão geradas novas pastas de sessão na raiz da pasta WEIGHT e os novos pesos treinados serão salvos dentro dessas pastas de sessão, cada época vai gerar um peso. Importante descompactar os pesos antes da execução do projeto!
 
 ## Desenvolvimento:
 
@@ -114,7 +114,7 @@ DETECTION_MIN_CONFIDENCE = 0.8
 
 O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK RCNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
 
-<img src="IMAGES/VIA.png" width="1000">
+<img src="IMAGES/VIA.png" width="800">
 
 
 
