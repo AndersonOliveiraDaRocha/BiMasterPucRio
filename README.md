@@ -85,20 +85,20 @@ Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e 
 
 O desenvolvimento do projeto teve como principais fases:
 
-1. Autorização do corpo gerencial da cia. (PETROBRAS) para propor a temática de detecção de corrosão por visão computacional e acesso às fontes de dados;  
-2. Análise do conteúdo base para o treino do modelo (DATASET);  
-3. Complementação de anotações e tratamento de imagens (Giro por exemplo);  
-4. Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
-5. Análise do modelo MASK RCNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
-6. Configuração de ambiente com os pacotes corretos das bibliotecas envolvidas;  
-7. Ajustes para execução dos processamentos em GPU;    
-8. Treino do modelo para o novo problema de detecção de corrosão externa;   
-9. Ajuste de parâmetros (épocas, passos, leaning rate, entre outros) para buscar os melhores resultados nas métricas de loss;  
-10. Predições com imagem nunca antes vistas pelo modelo;  
-11. Predições também com imagens envolvidas nos conjuntos de treino e validação;  
-12. Refactoring eliminando funções desnecessárias ao objetivo proposto;
-13. Upload do projeto para o GITHUB;
-14. Documentação do projeto;  
+**1.** Autorização do corpo gerencial da cia. (PETROBRAS) para propor a temática de detecção de corrosão por visão computacional e acesso às fontes de dados;  
+**2.** Análise do conteúdo base para o treino do modelo (DATASET);  
+**3.** Complementação de anotações e tratamento de imagens (Giro por exemplo);  
+**4.** Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
+**5.** Análise do modelo MASK RCNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
+**6.** Configuração de ambiente com os pacotes corretos das bibliotecas envolvidas;  
+**7.** Ajustes para execução dos processamentos em GPU;    
+**8.** Treino do modelo para o novo problema de detecção de corrosão externa;   
+**9.** Ajuste de parâmetros (épocas, passos, leaning rate, entre outros) para buscar os melhores resultados nas métricas de loss;  
+**10.** Predições com imagem nunca antes vistas pelo modelo;  
+**11.** Predições também com imagens envolvidas nos conjuntos de treino e validação;  
+**12.** Refactoring eliminando funções desnecessárias ao objetivo proposto;
+**13.** Upload do projeto para o GITHUB;
+**14.** Documentação do projeto;  
 
 ## Desenvolvimento Técnico:
 
