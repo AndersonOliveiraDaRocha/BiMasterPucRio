@@ -53,10 +53,10 @@ Considerando a técnica selecionada para abordar o problema, as pesquisas desse 
 
 ## Desenvolvimento:
 
-Como citado no tópico anterior esse projeto foi desenvolvido com base na rede MASK RCNN, seguem algumas características técnicas:
+Como citado no tópico anterior esse projeto foi desenvolvido com base na rede MASK RCNN, seguem abaixo algumas características técnicas:
 
 * KERAS com BACKEND Tensorflow;
-* Rede MASK RCNN com BACBONE RESNET101;
+* Rede MASK RCNN com BACKBONE RESNET101;
 * Rede pré-treinada com DATASET MS COCO;
 * Retreino com DATASET customizado com anotações de segmentação de corrosão, conjunto de treino (TRAIN) com 100 imagens e conjunto de validação (VAL) com 30 imagens;
 * Anotações realizadas com o VGG Image Annotator (VIA) e anotações exportadas como JSON (DATASET.JSON);
@@ -67,10 +67,12 @@ Como citado no tópico anterior esse projeto foi desenvolvido com base na rede M
 
 A estrutura de pastas do projeto encontra-se disposta da seguinte forma:
 
-* Pasta **CUSTOM**: Contém os arquivos **custom.py** e **predict.py**, respectivamente para fazer o treinamento do modelo e a predição com a detecção da corrosão. Para treinar o modelo e gerar novos pesos deve-se usar o seguinte comando: **"python custom.py train --dataset=../dataset --weights=coco"**, os novos pesos gerados estarão na SUBPASTA de sessão localizada na pasta **WEIGHT** na raiz do projeto. Para predição uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg** e posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
+* Pasta **CUSTOM**: Contém os arquivos **custom.py** e **predict.py**, respectivamente para fazer o treinamento do modelo e a predição com a detecção da corrosão. Para treinar o modelo e gerar novos pesos deve-se usar o seguinte comando: **"python custom.py train --dataset=../dataset --weights=coco"**, os novos pesos gerados estarão na SUBPASTA de sessão localizada na pasta **WEIGHT** na raiz do projeto. Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e deve ter o nome: **Corrosao.jpg**, posteriormente deve ser executado o comando **pyhton predict.py**. Ainda na pasta CUSTOM existe uma SUBPASTA chamada RESULTADOS onde algumas predições estão salvas para efeito de demonstração, como segue:
 
 
 <img src="CUSTOM/Resultados/Sample_A.jpg" width="294"><img src="CUSTOM/Resultados/Result_A.png" width="300">
+<img src="CUSTOM/Resultados/Sample_B.jpg" width="294"><img src="CUSTOM/Resultados/Result_B.png" width="300">
+<img src="CUSTOM/Resultados/Sample_C.jpg" width="294"><img src="CUSTOM/Resultados/Result_C.png" width="300">
 
 
 
