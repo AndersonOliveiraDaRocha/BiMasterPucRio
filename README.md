@@ -51,7 +51,7 @@ Na segmentação por instância os pixels são classificados por semelhança, n�
 
 Considerando a técnica selecionada para abordar o problema, as pesquisas desse estudo indicaram a rede MASK RCNN como um caminho promissor para obtenção de resultados. Uma implementação da MASK RCNN pode ser encontrada em: https://github.com/matterport/Mask_RCNN e foi utilizada como base desse estudo.
 
-## Desenvolvimento:
+## Características:
 
 Como citado no tópico anterior esse projeto foi desenvolvido com base na rede MASK RCNN, seguem abaixo algumas características técnicas:
 
@@ -74,5 +74,34 @@ Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e 
 <img src="CUSTOM/Resultados/Sample_A.jpg" width="154"><img src="CUSTOM/Resultados/Result_A.png" width="160">
 <img src="CUSTOM/Resultados/Sample_B.jpg" width="154"><img src="CUSTOM/Resultados/Result_B.png" width="160">
 <img src="CUSTOM/Resultados/Sample_F.jpg" width="154"><img src="CUSTOM/Resultados/Result_F.png" width="160">
+
+* Pasta **DATASET**: Hospeda os conjuntos de dados utilizados para treinar o modelo, DATASET de Treino (**TRAIN**) e DATASET de validação (**VAL**). As anotações foram feitas no VIA e os resultados exportados no formato JSON como já explicado anteriormente. Para um modelo com maior precisão é necessário um volume de dados de treinamento mais expressivo, porém, não houve disponibilidade para o exercício desse projeto.
+
+* Pasta **mrcnn**: Hospeda o núcleo do modelo MASK RCNN.
+
+* Pasta **WEIGHT**: Estão armazenados os pesos. Primeiro existe o peso **COCO_WEIGHT.h5** que é o peso do DATASET MS COCO, usado como base para estender o projeto, depois os pesos treinados na detecção de corrosão que estão salvos com o nome de **CORROSION.h5**. Caso o modelo seja novamente treinado serão geradas novas pastas de sessão e os novos pesos treinados serão salvos dentro dessas pastas, cada época vai gerar um peso. Importante descompactar os pesos antes da execução do projeto!
+
+## Desenvolvimento:
+
+O desenvolvimento do projeto teve como principais fases:
+
+1. Autorização do corpo gerencial da cia. (PETROBRAS) para propor a temática de detecção de corrosão por visão computacional e acesso às fontes de dados;  
+2. Análise do conteúdo base para o treino do modelo (DATASET);  
+3. Complementação de anotações e tratamento de imagens (Giro por exemplo);  
+4. Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
+5. Análise do modelo MASK RCNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
+6. Configuração de ambiente com os pacotes corretos das bibliotecas envolvidas;  
+7. Ajustes para execução dos processamentos em GPU;    
+8. Treino do modelo para o novo problema de detecção de corrosão externa;   
+9. Ajuste de parâmetros (épocas, passos, leaning rate, entre outros) para buscar os melhores resultados nas métricas de loss;  
+10. Predições com imagem nunca antes vistas pelo modelo;  
+11. Predições também com imagens envolvidas nos conjuntos de treino e validação;  
+12. Refactoring eliminando funções desnecessárias ao objetivo proposto;
+13. Upload do projeto para o GITHUB;
+14. Documentação do projeto;  
+
+## Desenvolvimento Técnico:
+
+
 
 
