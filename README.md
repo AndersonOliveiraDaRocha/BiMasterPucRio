@@ -124,7 +124,7 @@ Além da análise da fotografia para detecção da presença de corrosão, exist
 
 O resultado mais completo teria a seguinte aparência:
 
-<img src="IMAGES/ModelEvolution.png" width="800">
+<img src="IMAGES/ModelEvolution.png" width="350">
 
 
 
