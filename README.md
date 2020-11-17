@@ -73,7 +73,7 @@ Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e 
 
 <img src="CUSTOM/Resultados/Sample_A.jpg" width="294"><img src="CUSTOM/Resultados/Result_A.png" width="300">  
 <img src="CUSTOM/Resultados/Sample_B.jpg" width="294"><img src="CUSTOM/Resultados/Result_B.png" width="300">  
-<img src="CUSTOM/Resultados/Sample_C.jpg" width="294"><img src="CUSTOM/Resultados/Result_C.png" width="300"> 
+<img src="CUSTOM/Resultados/Sample_F.jpg" width="294"><img src="CUSTOM/Resultados/Result_F.png" width="300"> 
 
 
 
