@@ -91,16 +91,31 @@ O desenvolvimento do projeto teve como principais fases:
 **4.** Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
 **5.** Análise do modelo MASK RCNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
 **6.** Configuração de ambiente com os pacotes corretos das bibliotecas envolvidas;  
-**7.** Ajustes para execução dos processamentos em GPU;    
-**8.** Treino do modelo para o novo problema de detecção de corrosão externa;   
+**7.** Ajustes para execução dos processamentos em GPU;  
+**8.** Treino do modelo para o novo problema de detecção de corrosão externa;  
 **9.** Ajuste de parâmetros (épocas, passos, leaning rate, entre outros) para buscar os melhores resultados nas métricas de loss;  
 **10.** Predições com imagem nunca antes vistas pelo modelo;  
 **11.** Predições também com imagens envolvidas nos conjuntos de treino e validação;  
-**12.** Refactoring eliminando funções desnecessárias ao objetivo proposto;
-**13.** Upload do projeto para o GITHUB;
+**12.** Refactoring eliminando funções desnecessárias ao objetivo proposto;  
+**13.** Upload do projeto para o GITHUB;  
 **14.** Documentação do projeto;  
 
 ## Desenvolvimento Técnico:
+
+As implementações descritas no item 5 do capítulo anterior ocorreram majoritariamente nos arquivos  **custom.py** e **predict.py** onde o código fonte encontra-se comentado para facilitar entendimento e eventuais necessidades de manutenção.  
+  
+O modelo foi treinado considerando alguns parâmetros:  
+  
+LEARNING_RATE = 0.001  
+EPOCHS=20  
+LAYERS='heads' **(limitação por conta da GPU disponível para o projeto)**  
+STEPS_PER_EPOCH = 20  
+DETECTION_MIN_CONFIDENCE = 0.8  
+
+O modelo também reprojetado para considerar apenas 2 classes o BACKGROUND (padrão na implementação MASK RCNN) e a classe alvo, no caso CORROSAO = SIM, conforme anotação no VIA:  
+
+<img src="IMAGES/VIA.png" width="1000">
+
 
 
 
