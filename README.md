@@ -102,19 +102,38 @@ O desenvolvimento do projeto teve como principais fases:
 
 ## Desenvolvimento Técnico:
 
-As implementações descritas no item 5 do capítulo anterior ocorreram majoritariamente nos arquivos  **custom.py** e **predict.py** onde o código fonte encontra-se comentado para facilitar entendimento e eventuais necessidades de manutenção.  
+As implementações descritas no item 5 do tópico anterior ocorreram majoritariamente nos arquivos  **custom.py** e **predict.py** onde o código fonte encontra-se comentado para facilitar entendimento e eventuais necessidades de manutenção.  
   
 O modelo foi treinado considerando alguns parâmetros:  
   
 LEARNING_RATE = 0.001  
 EPOCHS=20  
-LAYERS='heads' **(limitação por conta da GPU disponível para o projeto)**  
+LAYERS='heads' **(limitado aos heads por conta da GPU disponível para o projeto)**  
 STEPS_PER_EPOCH = 20  
 DETECTION_MIN_CONFIDENCE = 0.8  
 
 O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK RCNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
 
 <img src="IMAGES/VIA.png" width="800">
+
+Para fins de validação da abordagem técnica do projeto, foi fixado (CORROSAO.JPG) o nome da imagem esperada para a predição, porém, o projeto abre muitas oportunidades de melhoria.  
+
+## Próximos Passos:
+
+Além da análise da fotografia para detecção da presença de corrosão, existem outras necessidades de informações que subsidiam o trabalho do inspetor. Informações como o tipo de distribuição da corrosão, os sistemas afetados (flanges, guarda-corpos, tubulações, etc.), o grau de corrosão mediante a norma ASTM D-610, são outras informações necessárias e que completam o trabalho do inspetor.  
+
+O resultado mais completo teria a seguinte aparência:
+
+<img src="IMAGES/ModelEvolution.png" width="800">
+
+
+
+
+
+## Conclusão:
+
+
+
 
 
 
