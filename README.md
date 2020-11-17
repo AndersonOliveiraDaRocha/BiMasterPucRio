@@ -53,10 +53,10 @@ Considerando a técnica selecionada para abordar o problema, as pesquisas desse 
 
 ## Características:
 
-Como citado no tópico anterior esse projeto foi desenvolvido com base na rede MASK RCNN, seguem abaixo algumas características técnicas:
+Como citado no tópico anterior esse projeto foi desenvolvido com base na rede MASK R-CNN, seguem abaixo algumas características técnicas:
 
 * KERAS com BACKEND Tensorflow;
-* Rede MASK RCNN com BACKBONE RESNET101;
+* Rede MASK R-CNN com BACKBONE RESNET101;
 * Rede pré-treinada com DATASET MS COCO;
 * Retreino com DATASET customizado com anotações de segmentação de corrosão, conjunto de treino (TRAIN) com 100 imagens e conjunto de validação (VAL) com 30 imagens;
 * Anotações realizadas com o VGG Image Annotator (VIA) e anotações exportadas como JSON (DATASET.JSON);
@@ -89,7 +89,7 @@ O desenvolvimento do projeto teve como principais fases:
 **2.** Análise do conteúdo base para o treino do modelo (DATASET);  
 **3.** Complementação de anotações e tratamento de imagens (Giro por exemplo);  
 **4.** Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
-**5.** Análise do modelo MASK RCNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
+**5.** Análise do modelo MASK R-CNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
 **6.** Configuração de ambiente com os pacotes corretos das bibliotecas envolvidas;  
 **7.** Ajustes para execução dos processamentos em GPU;  
 **8.** Treino do modelo para o novo problema de detecção de corrosão externa;  
@@ -112,7 +112,7 @@ LAYERS='heads' **(limitado aos heads por conta da GPU disponível para o projeto
 STEPS_PER_EPOCH = 20  
 DETECTION_MIN_CONFIDENCE = 0.8  
 
-O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK RCNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
+O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK R-CNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
 
 <img src="IMAGES/VIA.png" width="800">
 
@@ -129,11 +129,18 @@ O resultado mais completo teria a seguinte aparência:
 ## Conclusão:
 
 A visão computacional em suporte ao trabalho do inspetor de corrosão externa apresenta um grande potencial de otimizar o HH empregado nessa atividade, além de diminuir a subjetividade da análise, uma vez que um inspetor pode ter uma percepção distinta de outro inspetor acerca das condições da instalação, por mais que a norma ASTM-D610 (a norma possui imagens com amostras dos graus de corrosão para serem utilizados como referência) atue como parâmetro de referência. Pode até mesmo reduzir o número de embarques necessários para esse tipo de serviço, visto que as imagens podem ser coletadas por meio de outros recursos ou colaboradores a bordo e posteriormente analisadas em terra.  
-O rede MASK RCNN mostrou grande potencial de segmentar instâncias, porém, resta configurado a necessidade de analisar outras técnicas de visão computacional para completar os objetivos futuros desse trabalho, fazendo uma combinação desses resultados. Além do grande esfoço necessário para gerar um DATASET consiga treinar um modelo com essa proposta.
+O rede MASK R-CNN mostrou grande potencial de segmentar instâncias, porém, resta configurado a necessidade de analisar outras técnicas de visão computacional para completar os objetivos futuros desse trabalho, fazendo uma combinação desses resultados. Além do grande esfoço necessário para gerar um DATASET consiga treinar um modelo com essa proposta.
 
 ## Citação:
 
-with bibliography: citation.bib
+**matterport_maskrcnn_2017**,  
+**title**=Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow,    
+**author**=Waleed Abdulla,  
+**year**=2017,    
+**publisher**=Github,  
+**journal**=GitHub repository,  
+**howpublished**=https://github.com/matterport/Mask_RCNN  
+
 
 
 
