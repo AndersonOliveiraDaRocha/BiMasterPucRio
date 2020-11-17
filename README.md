@@ -128,8 +128,8 @@ O resultado mais completo teria a seguinte aparência:
 
 ## Conclusão:
 
-
-
+A visão computacional em suporte ao trabalho do inspetor de corrosão externa apresenta um grande potencial de otimizar o HH empregado nessa atividade, além de diminuir a subjetividade da análise, uma vez que um inspetor pode ter uma percepção distinta de outro inspetor acerca das condições da instalação, por mais que a norma ASTM-D610 (a norma possui imagens com amostras dos graus de corrosão para serem utilizados como referência) atue como parâmetro de referência. Pode até mesmo reduzir o número de embarques necessários para esse tipo de serviço, visto que as imagens podem ser coletadas por meio de outros recursos ou colaboradores a bordo e posteriormente analisadas em terra.  
+O rede MASK RCNN mostrou grande potencial de segmentar instâncias, porém, resta configurado a necessidade de analisar outras técnicas de visão computacional para completar os objetivos futuros desse trabalho, fazendo uma combinação desses resultados. Além do grande esfoço necessário para gerar um DATASET consiga treinar um modelo com essa proposta.
 
 
 
