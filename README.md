@@ -102,21 +102,21 @@ O desenvolvimento do projeto teve como principais fases:
 
 ## Desenvolvimento Técnico:
 
-As implementações descritas no item 5 do tópico anterior ocorreram majoritariamente nos arquivos  **custom.py** e **predict.py** onde o código fonte encontra-se comentado para facilitar entendimento e eventuais necessidades de manutenção.  
+As implementações e ajustes descritos no item 5 do tópico anterior ocorreram majoritariamente nos arquivos  **custom.py** e **predict.py** onde o código fonte encontra-se comentado para facilitar entendimento e eventuais necessidades de manutenção.  
   
 O modelo foi treinado considerando alguns parâmetros:  
   
-LEARNING_RATE = 0.001  
-EPOCHS=20  
+LEARNING_RATE = 0.001 **(taxa de aprendizado)**    
+EPOCHS=20 **(épocas)**  
 LAYERS='heads' **(limitado aos heads por conta da GPU disponível para o projeto)**  
-STEPS_PER_EPOCH = 20  
-DETECTION_MIN_CONFIDENCE = 0.8  
+STEPS_PER_EPOCH = 20 **(passos por época)**    
+DETECTION_MIN_CONFIDENCE = 0.8 **(grau de confiança mínimo no treinamento)**  
 
 O modelo também reprojetado para considerar apenas 2 classes: O BACKGROUND (padrão na implementação MASK R-CNN) e a CLASSE ALVO, no caso CORROSAO = SIM, conforme anotação ilustrada abaixo no VIA:  
 
 <img src="IMAGES/VIA.png" width="800">
 
-Para fins de validação da abordagem técnica do projeto, foi fixado (CORROSAO.JPG) o nome da imagem esperada para a predição, porém, o projeto abre muitas oportunidades de melhoria.  
+Para fins de validação da abordagem técnica do projeto, foi fixado (**CORROSAO.JPG**) o nome da imagem esperada para a predição, porém, o projeto abre muitas oportunidades de melhoria.  
 
 ## Próximos Passos:
 
