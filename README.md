@@ -89,7 +89,7 @@ Para predição, uma imagem simples precisa ser copiada para pasta **CUSTOM** e 
 O desenvolvimento do projeto teve como principais fases:
 
 **1.** Autorização do corpo gerencial da cia. (PETROBRAS) para propor a temática de detecção de corrosão por visão computacional e acesso às fontes de dados;  
-**2.** Análise do das fontes de dados para o treino do modelo (DATASET);  
+**2.** Análise das fontes de dados para o treino do modelo (DATASET);  
 **3.** Complementação de anotações e tratamento de imagens (Giro de imagens por exemplo para enquadramento na anotação);  
 **4.** Pesquisa com foco em identificar uma abordagem técnica para segmentação de imagens por instância;  
 **5.** Análise do modelo MASK R-CNN, entendimento do código fonte, implementações e ajustes necessários para adaptar ao problema de detecção de corrosão;  
@@ -134,7 +134,7 @@ O resultado mais completo considerando a evolução do modelo, ou mesmo a combin
 A visão computacional em suporte ao trabalho do inspetor de corrosão externa apresenta um grande potencial de otimizar o HH empregado nessa atividade, além de diminuir a subjetividade da análise, uma vez que um inspetor pode ter uma percepção distinta de outro inspetor acerca das condições da instalação, por mais que a norma ASTM-D610 (a norma possui imagens com amostras dos graus de corrosão para serem utilizados como referência) atue como parâmetro de referência. Pode até mesmo reduzir o número de embarques necessários para esse tipo de serviço, visto que as imagens podem ser coletadas por meio de outros recursos ou colaboradores a bordo e posteriormente analisadas em terra.  
 O rede MASK R-CNN mostrou grande potencial de segmentar instâncias, porém, resta configurado a necessidade de analisar outras técnicas de visão computacional para completar os objetivos futuros desse trabalho, fazendo uma combinação desses resultados. Além do grande esfoço necessário para gerar um DATASET que consiga treinar um modelo com essa proposta.
 
-## Citação:
+## Citações:
 
 **matterport_maskrcnn_2017**,  
 **title**=Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow,    
