@@ -11,7 +11,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ---
 
-### Resumo
+## Resumo
 
 <!-- trocar o texto abaixo pelo resumo do trabalho -->
 
