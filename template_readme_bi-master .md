@@ -1,7 +1,7 @@
-# Título do Trabalho
+# Visão Computacional para Detecção de Corrosão Externa em Instalações Offshore
 
 #### Aluno: [Anderson Oliveira da Rocha](https://github.com/AndersonOliveiraDaRocha)
-#### Orientador: [Leonardo Mendonza](https://github.com/link_do_github)
+#### Orientador: [Leonardo Mendonza]
 
 ---
 
@@ -16,12 +16,6 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 ### Resumo
 
 <!-- trocar o texto abaixo pelo resumo do trabalho -->
-
-# Visão Computacional para Detecção de Corrosão Externa em Instalações Offshore
-
-* BI MASTER PUC RIO (2020 - TURMA PETROBRAS) GRUPO D5 DO PROGRAMA E&P COMPETÊNCIAS.
-* ALUNO: ANDERSON OLIVEIRA DA ROCHA
-* MATRÍCULA: 192190080
 
 ## Contexto: 
 
