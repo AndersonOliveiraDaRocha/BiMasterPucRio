@@ -1,19 +1,8 @@
 # Visão Computacional para Detecção de Corrosão Externa em Instalações Offshore
 
-#### Aluno: [Anderson Oliveira da Rocha](https://github.com/AndersonOliveiraDaRocha)
-#### Orientador: Leonardo Mendonza
-
----
-
-Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
-
-- [Link para o código](https://github.com/AndersonOliveiraDaRocha/BiMasterPucRio). <!-- caso não aplicável, remover esta linha -->
-
----
-
-## Resumo
-
-<!-- trocar o texto abaixo pelo resumo do trabalho -->
+* BI MASTER PUC RIO (2020 - TURMA PETROBRAS) GRUPO D5 DO PROGRAMA E&P COMPETÊNCIAS.
+* ALUNO: ANDERSON OLIVEIRA DA ROCHA
+* MATRÍCULA: 192190080
 
 ## Contexto: 
 
@@ -155,10 +144,8 @@ O rede MASK R-CNN mostrou grande potencial de segmentar instâncias, porém, res
 **journal**=GitHub repository,  
 **howpublished**=https://github.com/matterport/Mask_RCNN  
 
----
 
-Matrícula: 192.190.080
 
-Pontifícia Universidade Católica do Rio de Janeiro
 
-Curso de Pós Graduação *Business Intelligence Master*
+
+
